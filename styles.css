@@ -1,0 +1,53 @@
+/* General CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.1em;
+}
+
+/* Container */
+.container {
+  width: 90%;
+}
+/* Header */
+.main-header {
+  text-align: center;
+}
+.title {
+  background-color: #30336b;
+  color: #dff9fb;
+  margin-bottom:25px;
+  padding: 25px;
+}
+.main-header p{
+    margin-bottom:25px;
+    padding:10px;
+}
+
+/* H-Rules */
+.first-hr{
+    border: 2px solid #30336b;
+}
+.second-hr{
+    border:1px solid #30336b;
+    margin-top:5px;
+}
+

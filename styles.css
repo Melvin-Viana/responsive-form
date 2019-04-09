@@ -14,13 +14,24 @@ h3 {
   font-family: "Raleway", sans-serif;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
+}
+
+section{
+    margin:25px 0;
+}
+p{
+    color: #686de0;
+}
+
+input{
+    border-radius:5px;
 }
 
 /* Container */
@@ -30,7 +41,7 @@ h3 {
 }
 /* Section-Heading */
 .section-heading {
-  color: #4834d4;
+  color: #130f40;
   margin-bottom: 20px;
 }
 /* ==Header== */
@@ -58,9 +69,7 @@ h3 {
 }
 
 /* ==Contact Info== */
-#contact-info {
-  margin: 25px 0;
-}
+
 .contact-inputs {
   display: flex;
   flex-direction: column;
@@ -68,13 +77,19 @@ h3 {
 }
 .contact-inputs label {
   color: #30336b;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+
 }
-.contact-inputs input, select {
+.contact-inputs input, select{
+    margin-bottom: 15px;
+}
+.contact-inputs input, select,textarea {
   background-color: #eff0f1;
   border: 0px;
-  height: 40px;
   outline-color: #30336b;
+}
+.contact-inputs input,select{
+    height: 40px;
 }
 .contact-inputs input {
   padding: 15px;
@@ -86,8 +101,45 @@ select {
 ::placeholder {
   text-align: right;
 }
+#zip{width:50%}
 
 /* Newsletter Format */
-#newsletter-options{
+#newsletter-options p{
+    margin:10px 0;
+}
+#newsletter-options label{
+    color:#000;
+}
+[class$="buttons"] input{
+    margin-left:5px;
+    margin-right: 10px;
+}
+[class$="buttons"]{
     margin:15px 0;
+}
+input:checked {
+background-color:#30336b;
+}
+.form-comment{
+    display: flex;
+    flex-direction: column;
+}
+.form-comment textarea{
+    height: 80px;
+    outline-color: #30336b;
+}
+input[type='submit']{
+    border:0px;
+    background-color:#7ed6df;
+    color:#dff9fb;
+    height:50px;
+    font-size:18px;
+    font-family: "Raleway", sans-serif;
+    margin-top:15px;
+}
+/* ==Footer== */
+footer{
+    text-align: center;
+    color:#ccc;
+    padding-bottom:20px;
 }

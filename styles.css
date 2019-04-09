@@ -1,4 +1,4 @@
-/* General CSS */
+/*== General CSS ==*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,9 +29,12 @@ section{
 p{
     color: #686de0;
 }
-
+/* Input */
 input{
     border-radius:5px;
+}
+input:focus { 
+  outline-color: #30336b;
 }
 
 /* Container */
@@ -86,8 +89,8 @@ input{
 .contact-inputs input, select,textarea {
   background-color: #eff0f1;
   border: 0px;
-  outline-color: #30336b;
 }
+
 .contact-inputs input,select{
     height: 40px;
 }
@@ -142,4 +145,22 @@ footer{
     text-align: center;
     color:#ccc;
     padding-bottom:20px;
+}
+
+@media  only screen and (min-width:768px){
+ .container{
+     width:50%;
+ }
+ .contact-inputs{
+     align-items: center;
+     display:flex;
+     flex-direction:row;
+     width:100%;
+    }
+    .contact-inputs input,select{
+      width:70%;
+    }
+    .contact-inputs label{
+      width:30%;
+    }
 }

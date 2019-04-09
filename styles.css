@@ -7,7 +7,6 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  transition: all 0.5s;
 }
 h1,
 h2,
@@ -23,12 +22,11 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
-p {
-  color: #686de0;
+.sub-heading {
+  color: #686de0 !important;
 }
 select {
   background-color: #fff;
-  transition: background-color 0.5s;
 }
 /* Input,select,textarea */
 input,
@@ -122,13 +120,13 @@ select {
   padding-bottom: 12px;
 }
 /* ==Newsletter Format== */
-#newsletter-options {
+#newsletter {
   background-color: #dff9fb;
 }
 .small-indent {
-  margin-left: 0.5em;
+  margin: 0 0.5em;
 }
-#newsletter-options label {
+#newsletter label {
   color: #000;
 }
 [class$="buttons"] input {
@@ -141,7 +139,14 @@ select {
 input:checked {
   background-color: #30336b;
 }
+#plain {
+  margin-bottom: 25px;
+}
 .sub-heading {
+  margin: 20px 0;
+  padding-top: 10px;
+}
+label[for="comment"] {
   margin: 20px 0;
   padding-top: 10px;
 }
@@ -151,7 +156,8 @@ input:checked {
 }
 .form-comment textarea {
   height: 80px;
-  margin-bottom:1.8em;
+  margin-bottom: 1.8em;
+  margin-top: 1.2em;
   outline-color: #30336b;
 }
 input[type="submit"] {
@@ -167,7 +173,7 @@ input[type="submit"] {
 footer {
   text-align: center;
   color: #ccc;
-  margin:25px 0;
+  margin: 25px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -188,6 +194,6 @@ footer {
     width: 30%;
   }
   .small-indent {
-    margin-left: 0;
+    margin: 0;
   }
 }

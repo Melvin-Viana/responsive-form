@@ -25,29 +25,69 @@ h3 {
 
 /* Container */
 .container {
+  margin: 0 auto;
   width: 90%;
 }
-/* Header */
+/* Section-Heading */
+.section-heading {
+  color: #4834d4;
+  margin-bottom: 20px;
+}
+/* ==Header== */
 .main-header {
   text-align: center;
 }
 .title {
   background-color: #30336b;
   color: #dff9fb;
-  margin-bottom:25px;
+  margin-bottom: 25px;
   padding: 25px;
 }
-.main-header p{
-    margin-bottom:25px;
-    padding:10px;
+.main-header p {
+  margin-bottom: 25px;
+  padding: 10px;
 }
 
 /* H-Rules */
-.first-hr{
-    border: 2px solid #30336b;
+.first-hr {
+  border: 2px solid #30336b;
 }
-.second-hr{
-    border:1px solid #30336b;
-    margin-top:5px;
+.second-hr {
+  border: 1px solid #30336b;
+  margin-top: 5px;
 }
 
+/* ==Contact Info== */
+#contact-info {
+  margin: 25px 0;
+}
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.contact-inputs label {
+  color: #30336b;
+  margin-bottom: 5px;
+}
+.contact-inputs input, select {
+  background-color: #eff0f1;
+  border: 0px;
+  height: 40px;
+  outline-color: #30336b;
+}
+.contact-inputs input {
+  padding: 15px;
+}
+select {
+  text-indent: 10px;
+}
+/* Required text */
+::placeholder {
+  text-align: right;
+}
+
+/* Newsletter Format */
+#newsletter-options{
+    margin:15px 0;
+}

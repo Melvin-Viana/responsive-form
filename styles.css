@@ -7,6 +7,7 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  transition: all 0.5s;
 }
 h1,
 h2,
@@ -22,21 +23,31 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
-
-section{
-    margin:25px 0;
+p {
+  color: #686de0;
 }
-p{
-    color: #686de0;
+select {
+  background-color: #fff;
+  transition: background-color 0.5s;
 }
-/* Input */
-input{
-    border-radius:5px;
+/* Input,select,textarea */
+input,
+select,
+textarea {
+  border: 1px solid #ccc;
+  transition: ease-in-out, background-color 0.5s ease-in-out;
 }
-input:focus { 
+input:focus,
+select:focus,
+textarea:focus {
   outline-color: #30336b;
+  background-color: #d5f9fd;
+  transition: ease-in-out, background-color 0.5s ease-in-out;
 }
-
+select,
+textarea {
+  text-indent: 10px;
+}
 /* Container */
 .container {
   margin: 0 auto;
@@ -45,6 +56,7 @@ input:focus {
 /* Section-Heading */
 .section-heading {
   color: #130f40;
+  padding-top: 25px;
   margin-bottom: 20px;
 }
 /* ==Header== */
@@ -70,7 +82,9 @@ input:focus {
   border: 1px solid #30336b;
   margin-top: 5px;
 }
-
+.third-hr {
+  border: 1px solid #30336b;
+}
 /* ==Contact Info== */
 
 .contact-inputs {
@@ -79,88 +93,101 @@ input:focus {
   margin-bottom: 5px;
 }
 .contact-inputs label {
-  color: #30336b;
+  color: #000;
   margin-bottom: 10px;
-
 }
-.contact-inputs input, select{
-    margin-bottom: 15px;
-}
-.contact-inputs input, select,textarea {
-  background-color: #eff0f1;
-  border: 0px;
+.contact-inputs input,
+select {
+  margin-bottom: 15px;
 }
 
-.contact-inputs input,select{
-    height: 40px;
+.contact-inputs input,
+select {
+  height: 40px;
 }
 .contact-inputs input {
   padding: 15px;
 }
-select {
-  text-indent: 10px;
-}
-/* Required text */
-::placeholder {
+
+/* Placeholder CSS */
+#fullName::placeholder,
+#email::placeholder {
   text-align: right;
 }
-#zip{width:50%}
-
-/* Newsletter Format */
-#newsletter-options p{
-    margin:10px 0;
+#zip {
+  width: 50%;
 }
-#newsletter-options label{
-    color:#000;
+.contact-inputs:last-child {
+  margin-bottom: 0;
+  padding-bottom: 12px;
 }
-[class$="buttons"] input{
-    margin-left:5px;
-    margin-right: 10px;
+/* ==Newsletter Format== */
+#newsletter-options {
+  background-color: #dff9fb;
 }
-[class$="buttons"]{
-    margin:15px 0;
+.small-indent {
+  margin-left: 0.5em;
+}
+#newsletter-options label {
+  color: #000;
+}
+[class$="buttons"] input {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+[class$="buttons"] {
+  margin: 15px 0;
 }
 input:checked {
-background-color:#30336b;
+  background-color: #30336b;
 }
-.form-comment{
-    display: flex;
-    flex-direction: column;
+.sub-heading {
+  margin: 20px 0;
+  padding-top: 10px;
 }
-.form-comment textarea{
-    height: 80px;
-    outline-color: #30336b;
+.form-comment {
+  display: flex;
+  flex-direction: column;
 }
-input[type='submit']{
-    border:0px;
-    background-color:#7ed6df;
-    color:#dff9fb;
-    height:50px;
-    font-size:18px;
-    font-family: "Raleway", sans-serif;
-    margin-top:15px;
+.form-comment textarea {
+  height: 80px;
+  margin-bottom:1.8em;
+  outline-color: #30336b;
+}
+input[type="submit"] {
+  border: 0px;
+  background-color: #7ed6df;
+  color: #dff9fb;
+  height: 50px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 15px;
 }
 /* ==Footer== */
-footer{
-    text-align: center;
-    color:#ccc;
-    padding-bottom:20px;
+footer {
+  text-align: center;
+  color: #ccc;
+  margin:25px 0;
 }
 
-@media  only screen and (min-width:768px){
- .container{
-     width:50%;
- }
- .contact-inputs{
-     align-items: center;
-     display:flex;
-     flex-direction:row;
-     width:100%;
-    }
-    .contact-inputs input,select{
-      width:70%;
-    }
-    .contact-inputs label{
-      width:30%;
-    }
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+  .contact-inputs {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact-inputs input,
+  select {
+    width: 70%;
+  }
+  .contact-inputs label {
+    width: 30%;
+  }
+  .small-indent {
+    margin-left: 0;
+  }
 }

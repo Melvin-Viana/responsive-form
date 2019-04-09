@@ -22,6 +22,7 @@ h2 {
 legend {
   font-size: 1.3em;
   font-weight: 800;
+  float: left;
 }
 .sub-heading {
   color: #686de0 !important;
@@ -50,8 +51,9 @@ textarea {
 }
 /* Container */
 .container {
-  margin: 0 auto;
-  width: 90%;
+  max-width:700px;
+  margin:0 auto;
+  padding: 0 1em;
 }
 /* Section-Heading */
 .section-heading {
@@ -179,9 +181,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 50%;
-  }
+  
   .contact-inputs {
     align-items: center;
     display: flex;
